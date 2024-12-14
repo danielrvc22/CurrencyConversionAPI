@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj": {}
+    "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj": {
+    "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
+        "projectUniqueName": "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
         "projectName": "CurrencyRepository",
-        "projectPath": "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
+        "projectPath": "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
         "packagesPath": "C:\\Users\\dvillanueva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\obj\\",
+        "outputPath": "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

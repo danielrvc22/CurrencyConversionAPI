@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QdjHLWww9QI=",
+  "dgSpecHash": "wLedOgNtb8A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dvillanueva\\source\\repos\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
+  "projectFilePath": "C:\\Users\\dvillanueva\\Documents\\GitHub\\CurrencyConversionAPI\\CurrencyConversionRepository\\CurrencyRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dvillanueva\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dvillanueva\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
