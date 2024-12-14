@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CurrencyRepository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e61e46c723dfb14b8df1df0836408aa22da42b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47b616b88faed71c9443daf6c16bb380f78fc6ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("CurrencyRepository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CurrencyRepository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

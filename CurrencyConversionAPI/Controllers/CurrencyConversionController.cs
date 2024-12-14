@@ -1,4 +1,5 @@
-﻿using CurrencyRepository.Data;
+﻿using CurrencyRepository;
+using CurrencyRepository.Data;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,11 +11,11 @@ namespace CurrencyConversionAPI.Controllers
     public class CurrencyConversionController : ControllerBase
     {
 
-        private readonly CurrencyDBContext _dbContext;
+        private readonly ICurrencyConversionRepository _currencyConversionRepository;
 
-        public CurrencyConversionController (CurrencyDBContext currencyDBContext)
+        public CurrencyConversionController (ICurrencyConversionRepository currencyDBContext)
         {
-            _dbContext = currencyDBContext;
+           _currencyConversionRepository = currencyDBContext;
         }
 
         // GET: api/<CurrencyConversionController>

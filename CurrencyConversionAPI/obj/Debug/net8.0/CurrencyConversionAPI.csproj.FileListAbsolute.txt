@@ -35,8 +35,8 @@ C:\Users\dvillanueva\source\repos\CurrencyConversionAPI\CurrencyConversionAPI\ob
 C:\Users\dvillanueva\source\repos\CurrencyConversionAPI\CurrencyConversionAPI\obj\Debug\net8.0\CurrencyConversionAPI.genruntimeconfig.cache
 C:\Users\dvillanueva\source\repos\CurrencyConversionAPI\CurrencyConversionAPI\obj\Debug\net8.0\ref\CurrencyConversionAPI.dll
 C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\CurrencyConversionAPI.staticwebassets.endpoints.json
 C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\CurrencyConversionAPI.staticwebassets.endpoints.json
 C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\CurrencyConversionAPI.exe
 C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\CurrencyConversionAPI.deps.json
 C:\Users\dvillanueva\Documents\GitHub\CurrencyConversionAPI\CurrencyConversionAPI\bin\Debug\net8.0\CurrencyConversionAPI.runtimeconfig.json

@@ -3,6 +3,7 @@ using CurrencyRepository.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CurrencyRepository.Migrations
 {
     [DbContext(typeof(CurrencyDBContext))]
-    partial class CurrencyDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241214080742_ColummAdd")]
+    partial class ColummAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,17 +29,14 @@ namespace CurrencyRepository.Migrations
                     b.Property<string>("DateConversion")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CurrencyOrigin")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CurrencyTarget")
+                    b.Property<string>("Currency")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("ConversionValue")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("DateConversion", "CurrencyOrigin", "CurrencyTarget");
+                    b.HasKey("DateConversion", "Currency");
 
                     b.ToTable("Currencies");
                 });
