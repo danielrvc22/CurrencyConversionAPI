@@ -8,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 InjectionDependency.Inject(builder);
 builder.Services.AddDbContext<CurrencyDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+     .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
     );
+
 
  //Add services to the container.
 
@@ -26,6 +28,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(x => x
+           .AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader());
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

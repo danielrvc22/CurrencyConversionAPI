@@ -1,5 +1,7 @@
-﻿using CurrencyRepository;
+﻿using CurrencyConversionAPI.DTO;
+using CurrencyRepository;
 using CurrencyRepository.Data;
+using CurrencyRepository.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,24 +20,53 @@ namespace CurrencyConversionAPI.Controllers
            _currencyConversionRepository = currencyDBContext;
         }
 
-        // GET: api/<CurrencyConversionController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+      
+
+        
+        [HttpGet("Conversion")]
+        public async Task<IActionResult> CurrencyConversion(decimal amount  ,  string currencyOrigin , string currencyTarget)
         {
-            return new string[] { "value1", "value2" };
+           var currencyData = await _currencyConversionRepository.GetCurrencyConversion(amount, currencyOrigin, currencyTarget);
+
+            if (currencyData != null)
+            {
+
+                var result = new CurrencyConversionResponse()
+                {
+                    Amount = amount,
+                    CurrencyOrigin = currencyOrigin,
+                    CurrencyTarget = currencyTarget,
+                    AmountConversion = amount * currencyData.ConversionValue,
+                    ConversionValue = currencyData.ConversionValue
+
+                };
+
+                return Ok(result);
+            }
+            else { 
+             return NotFound("No se encontro  tipo de cambio para la moneda de Origen y Destino.");
+            }
+
+           
         }
 
-        // GET api/<CurrencyConversionController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        
 
         // POST api/<CurrencyConversionController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("UpdateConversionValue")]
+        public async Task<string> UpdateConversionValue(string currencyOrigin, string currencyTarget , decimal conversionValue)
         {
+
+            CurrencyModel currency = new CurrencyModel {
+                ConversionValue = conversionValue,
+                CurrencyOrigin = currencyOrigin,
+                CurrencyTarget = currencyTarget,
+                DateConversion = DateTime.Now.ToString("dd/MM/yyyy")
+            };
+            var result = await _currencyConversionRepository.UpdateConversionValue(currency);
+
+            return result;
+
         }
 
         // PUT api/<CurrencyConversionController>/5

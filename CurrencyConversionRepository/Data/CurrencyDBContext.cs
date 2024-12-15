@@ -9,6 +9,6 @@ namespace CurrencyRepository.Data
         public CurrencyDBContext(DbContextOptions<CurrencyDBContext> options)  : base(options) {
         }
 
-        DbSet<CurrencyModel> Currencies {  get; set; }   
+        public DbSet<CurrencyModel> Currencies {  get; set; }   
     }
 }
