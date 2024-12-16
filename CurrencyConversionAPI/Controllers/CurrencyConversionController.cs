@@ -13,6 +13,7 @@ namespace CurrencyConversionAPI.Controllers
     public class CurrencyConversionController : ControllerBase
     {
 
+       
         private readonly ICurrencyConversionRepository _currencyConversionRepository;
 
         public CurrencyConversionController (ICurrencyConversionRepository currencyDBContext)
@@ -26,7 +27,8 @@ namespace CurrencyConversionAPI.Controllers
         [HttpGet("Conversion")]
         public async Task<IActionResult> CurrencyConversion(decimal amount  ,  string currencyOrigin , string currencyTarget)
         {
-           var currencyData = await _currencyConversionRepository.GetCurrencyConversion(amount, currencyOrigin, currencyTarget);
+            Console.WriteLine("Conversion" + DateTime.Now);
+            var currencyData = await _currencyConversionRepository.GetCurrencyConversion(amount, currencyOrigin, currencyTarget);
 
             if (currencyData != null)
             {
@@ -56,7 +58,7 @@ namespace CurrencyConversionAPI.Controllers
         [HttpPost("UpdateConversionValue")]
         public async Task<string> UpdateConversionValue(string currencyOrigin, string currencyTarget , decimal conversionValue)
         {
-
+            Console.WriteLine("UpdateConversionValue" + DateTime.Now);
             CurrencyModel currency = new CurrencyModel {
                 ConversionValue = conversionValue,
                 CurrencyOrigin = currencyOrigin,

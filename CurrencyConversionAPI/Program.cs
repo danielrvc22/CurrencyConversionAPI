@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
+Console.WriteLine("Init App" + DateTime.Now);
 InjectionDependency.Inject(builder);
 builder.Services.AddDbContext<CurrencyDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
