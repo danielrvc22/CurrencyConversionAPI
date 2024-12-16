@@ -71,16 +71,6 @@ namespace CurrencyConversionAPI.Controllers
 
         }
 
-        // PUT api/<CurrencyConversionController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CurrencyConversionController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+     
     }
 }
